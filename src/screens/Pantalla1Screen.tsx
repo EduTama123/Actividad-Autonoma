@@ -20,7 +20,7 @@ export const Pantalla1Screen = ({ navigation }: Props) => {
                 }}
             />
             <TouchableOpacity style={styles.botonEstilo} onPress={() => navigation.navigate('Pantalla2')}>
-                <Text style={styles.textoBotonEstilo}>Ir a pantalla 2</Text>
+                <Text style={styles.textoBotonEstilo}>Ir a la calculadora</Text>
             </TouchableOpacity>
         </View>
     )

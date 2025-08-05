@@ -3,23 +3,31 @@ import { StyleSheet } from "react-native";
 //genstion de estilos
 export const styles = StyleSheet.create({
     container: {
-        marginHorizontal: 20,
-        marginVertical: 10,
+        flex: 1,
+        marginVertical: 20,
+        marginHorizontal: 10,
         alignItems: 'center',
+        justifyContent: 'center',
     },
     titulo: {
         fontSize: 20,
         fontWeight: 'bold',
-        paddingVertical: 25,
+        color: '#000000ff'
     },
     imagen: {
-        width: 150,
-        height: 150,
+        width: 250,
+        height: 250,
         borderRadius: 150,
+    },
+    botonRegresar:{
+      alignSelf: 'flex-start',
+      width: 50,
+      height: 50,
+      marginBottom: 40
     },
     input: {
         height: 50,
-        width: '100%',
+        width: '95%',
         marginVertical: 10,
         borderWidth: 1,
         borderColor: '#000000ff',
@@ -33,6 +41,8 @@ export const styles = StyleSheet.create({
         fontSize: 15,
         fontWeight: 'bold',
         paddingTop: 10,
+        marginHorizontal: 20,
+        marginTop: 10
     },
     botonEstilo: {
         backgroundColor: 'black',

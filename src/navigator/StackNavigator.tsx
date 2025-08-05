@@ -12,8 +12,8 @@ const Stack = createNativeStackNavigator<RootStackParams>();
 export const StackNavigator = () => {
     return (
         <Stack.Navigator>
-            <Stack.Screen name="Pantalla1" options={{ title: 'Pantalla 1' }} component={Pantalla1Screen} />
-            <Stack.Screen name="Pantalla2" options={{ title: 'Pantalla 2' }} component={Pantalla2Screen} />
+            <Stack.Screen name="Pantalla1" options={{ headerShown: false }} component={Pantalla1Screen} />
+            <Stack.Screen name="Pantalla2" options={{ headerShown: false }} component={Pantalla2Screen} />
         </Stack.Navigator>
     );
 };
