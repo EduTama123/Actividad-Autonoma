@@ -21,9 +21,9 @@ export const Pantalla2Screen = () => {
         }
         //casaos en que el dividiendo o divisor sean = 0
         if (n1 === 0 && n2 === 0) {
-            setResultado('Indefinido (0/0)');
+            setResultado('Indeterminación (0/0)');
         } else if (n2 === 0) {
-            setResultado('Indeterminado (división por cero)');
+            setResultado('No existe división para cero (n/0)');
         } else {
             const division = n1 / n2;
             setResultado(`Resultado de la división: ${division.toFixed(2)}`); //metodo para mostrar el resultado con 2 decimales
