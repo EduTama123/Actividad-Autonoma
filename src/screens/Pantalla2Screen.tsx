@@ -70,7 +70,7 @@ export const Pantalla2Screen = () => {
             </TouchableOpacity>
             {/*metodo ternario*/}
             {resultado ? (
-                <Text style={styles.subtitulo}>{resultado}</Text>
+                <TextComponent title={resultado}></TextComponent>
             ) : null}
         </View>
     )

@@ -42,12 +42,6 @@ export const styles = StyleSheet.create({
         backgroundColor: 'rgba(18, 18, 18, 0.6)',
         
     },
-    titulo: {
-        fontSize: 35,
-        fontWeight: 'bold',
-        alignSelf: 'center',
-        color: '#ffffffff',
-    },
     imagen: {
         top: 60,
         width: '85%',
@@ -62,25 +56,6 @@ export const styles = StyleSheet.create({
         borderRadius: 60,
         backgroundColor: 'white',
     },
-    input: {
-        height: 50,
-        width: '100%',
-        marginVertical: 10,
-        borderWidth: 1,
-        paddingHorizontal: 15,
-        borderRadius: 8,
-        fontSize: 16,
-        backgroundColor: '#ecececff',
-    },
-    subtitulo: {
-        alignSelf: 'baseline',
-        fontSize: 18,
-        fontWeight: 'bold',
-        paddingTop: 10,
-        marginHorizontal: 20,
-        marginTop: 10,
-        color: 'white'
-    },
     botonEstilo: {
         backgroundColor: 'black',
         paddingVertical: 12,
@@ -88,12 +63,6 @@ export const styles = StyleSheet.create({
         borderRadius: 5,
         marginTop: 20,
         alignSelf: 'center',
-    },
-    textoBotonEstilo: {
-        color: 'white',
-        fontSize: 20,
-        fontWeight: 'bold',
-        textAlign: 'center',
     },
 
 })
