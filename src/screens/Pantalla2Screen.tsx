@@ -33,33 +33,37 @@ export const Pantalla2Screen = () => {
     return (
         <View style={styles.container}>
             {/*boton de regresar */}
-            <TouchableOpacity style={styles.botonRegresar} onPress={() => navigation.goBack()}>
+            <View style={styles.containerCalculadoraBoton}>
+                <TouchableOpacity onPress={() => navigation.goBack()}>
                 <Image
                     source={{
-                        uri: 'https://www.pngarts.com/files/8/Round-Back-Button-PNG-Image-Background.png'
+                        uri: 'https://cdn-icons-png.flaticon.com/512/318/318504.png'
                     }}
                     style={styles.botonRegresar} />
             </TouchableOpacity>
+            </View>
 
-            <Text style={styles.titulo}>CALCULADORA</Text>
+            <View style={styles.containerForm}>
+                <Text style={styles.titulo}>CASIO.APP</Text>
 
-            <Text style={styles.subtitulo}>Ingrese el primer numero</Text>
-            {/*componente imput para ingresar un numero*/}
-            <TextInput
-                style={styles.input}
-                placeholder="Ejemplo: 1, 20, ..."
-                keyboardType="numeric"
-                value={num1}
-                onChangeText={setNum1} />
+                <Text style={styles.subtitulo}>Ingrese el primer numero</Text>
+                {/*componente imput para ingresar un numero*/}
+                <TextInput
+                    style={styles.input}
+                    placeholder="Ejemplo: 1, 20, ..."
+                    keyboardType="numeric"
+                    value={num1}
+                    onChangeText={setNum1} />
 
-            <Text style={styles.subtitulo}>Ingrese el segundo numero</Text>
-            {/*componente imput para ingresar un numero*/}
-            <TextInput
-                style={styles.input}
-                placeholder="Ejemplo: 1, 20, ..."
-                keyboardType="numeric"
-                value={num2}
-                onChangeText={setNum2} />
+                <Text style={styles.subtitulo}>Ingrese el segundo numero</Text>
+                {/*componente imput para ingresar un numero*/}
+                <TextInput
+                    style={styles.input}
+                    placeholder="Ejemplo: 1, 20, ..."
+                    keyboardType="numeric"
+                    value={num2}
+                    onChangeText={setNum2} />
+            </View>
 
             <TouchableOpacity
                 style={styles.botonEstilo}
