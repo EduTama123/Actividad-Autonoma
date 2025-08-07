@@ -4,7 +4,7 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#121212ff',
+        backgroundColor: 'rgba(18, 18, 18, 1)',
         alignItems: 'center',
         justifyContent: 'center',
         marginTop: 40
@@ -24,10 +24,22 @@ export const styles = StyleSheet.create({
         top: 15,
         left: 15,
     },
-    containerForm:{
+    containerForm: {
         position: 'relative',
         width: '80%',
         bottom: 0,
+
+    },
+    imagenFondo: {
+        position: 'absolute',
+        alignSelf: 'center',
+        width: '100%',
+        height: '100%',
+        borderRadius: 20,
+    },
+    overlay: {
+        ...StyleSheet.absoluteFillObject,
+        backgroundColor: 'rgba(18, 18, 18, 0.6)',
         
     },
     titulo: {
@@ -38,15 +50,15 @@ export const styles = StyleSheet.create({
     },
     imagen: {
         top: 60,
-        width: '100%',
+        width: '85%',
         height: '55%',
         borderRadius: 20
     },
     botonRegresar: {
         position: 'absolute',
         alignContent: 'flex-start',
-        width: 60,
-        height: 60,
+        width: 70,
+        height: 50,
         borderRadius: 60,
         backgroundColor: 'white',
     },

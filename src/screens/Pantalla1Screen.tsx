@@ -3,6 +3,8 @@ import { styles } from '../theme/appTheme'
 import { StackScreenProps } from '@react-navigation/stack';
 import { Button, Image, ImageBackground, Text, TouchableOpacity, View } from 'react-native'
 import { RootStackParams } from '../navigator/StackNavigator';
+import { TitleComponent } from '../components/TitleComponent';
+import { TextButtonComponent } from '../components/TextButtonComponent';
 
 //Navegacion por propiedades de StackNavigator
 //Interface para las propiedades e navegacion
@@ -13,9 +15,9 @@ export const Pantalla1Screen = ({ navigation }: Props) => {
     return (
         <View style={styles.container}>
             <View style={styles.containerTitulo}>
-                <Text style={styles.titulo}>BIENVENIDO</Text>
-                <Text style={styles.titulo}>A LA</Text>
-                <Text style={styles.titulo}>CALCULADORA</Text>
+                <TitleComponent title='BIENVENIDO'/>
+                <TitleComponent title='A LA'/>
+                <TitleComponent title='CALCULADORA'/>
             </View>
             <Image
                 style={styles.imagen}
@@ -25,7 +27,7 @@ export const Pantalla1Screen = ({ navigation }: Props) => {
             />
             <View style={styles.containerMenuBoton}>
                 <TouchableOpacity style={styles.botonEstilo} onPress={() => navigation.navigate('Pantalla2')}>
-                    <Text style={styles.textoBotonEstilo}>Pulsa el botón para empezar!</Text>
+                    <TextButtonComponent title='Pulsa el botón para empezar!'/>
                 </TouchableOpacity>
             </View>
         </View>
